@@ -1,0 +1,7 @@
+.taskCompleted{
+    color: red;
+    text-decoration: line-through;
+}
+.taskInCompleted{
+    color: blue;
+}

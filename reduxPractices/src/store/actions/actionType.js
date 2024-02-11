@@ -1,0 +1,11 @@
+
+
+ const ACTIONS  = {
+    ADD:'ADD_ONE',
+    SUBTRACT:'SUBTRACT_ONE',
+    ADD_NUM:'ADD_FIVE',
+    RESET:'RESET',
+    AUTH_TOGGLE:'AUTH_TOGGLE'
+}
+
+export default ACTIONS

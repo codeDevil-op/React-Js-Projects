@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100vh;
+    background-color: rgb(68, 68, 182);
+    display: flex;
+}
+.main-container .content-container{
+    height: fit-content;
+    width: 30%;
+    background-color: #ffffff;
+    margin: 200px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+.content-container .logout{
+    width: fit-content;
+    margin-top: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: rgba(255, 123, 0, 0.856);
+    cursor: pointer;
+}
+h3{
+    margin-top: 10px;
+    font-size: 23px;
+    text-align: center;
+}
+p{
+    margin: 10px;
+    font-size: 20px;
+}
+.incre-decre-reset{
+    display: flex;
+    flex-direction: row;
+    
+}
+.incre-decre-reset button{
+    margin-left: 5px;
+    width: fit-content;
+    margin-top: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.incre-decre-reset .add{
+    background-color: green;
+}
+.incre-decre-reset .sub{
+    background-color: red;
+}
+.incre-decre-reset .res{
+    background-color: aqua;
+}

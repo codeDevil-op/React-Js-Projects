@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+}
+.main .content-container{
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    margin:200px auto;
+    text-align: center;
+}
