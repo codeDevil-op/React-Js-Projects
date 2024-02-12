@@ -5,10 +5,12 @@ function Jokes() {
   const [joke,setJoke] = useState({})
   const [isloading,setIsLoading] = useState(true)
   const url = 'https://api.quotable.io/random'
-  const getJoke = ()=>{
+
+  const getQuote = ()=>{
     setIsLoading(true)
     fetch(url)
     .then((response)=>{
+      console.log(response)
       return response.json()
     }).then((data)=>{
       setJoke(data)
@@ -17,14 +19,14 @@ function Jokes() {
     })
   }
   useEffect(() => {
-    getJoke()
+    getQuote()
   }, [])
   
   
   return (
     <section className='--flex-center --100vh --bg-primary'>
         <div className=' --card --bg-light --p'>
-        <h2>Random Jokes</h2>
+        <h2>Random Quotes</h2>
         <div className='--line'>
         </div>
         {isloading?
@@ -34,12 +36,12 @@ function Jokes() {
           </div>
           ):(
           <>
-          <h4>Joke id:{joke._id}</h4>
+          <h4>Quote id:{joke._id}</h4>
           <p className='--text-center'>{joke.content}</p>
           </>
         )}
         <br />
-        <button className="--btn --btn-primary" onClick={getJoke}>Generate Joke</button>
+        <button className="--btn --btn-primary" onClick={getQuote}>Generate Quote</button>
         </div>
     </section>
   )
