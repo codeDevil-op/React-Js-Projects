@@ -1,0 +1,46 @@
+header{
+    position: relative;
+    background-color: var(--background);
+    width: 100%;
+}
+header::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    
+    bottom: 0;
+    background-color: var(--foreground);
+    height: 1px;
+    width: 1000px;
+    transform: translateX(-50%);
+}
+.toggle-btn{
+    width: 45px;
+    height: 23px;
+    background-color: #111;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    transform: scale((1.5));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+ul{
+    color: var(--foreground);
+}
+.toggle-btn .ball{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+.moved{
+    transform: translateX(21px);
+    background-color:var(--foreground) !important;
+}
