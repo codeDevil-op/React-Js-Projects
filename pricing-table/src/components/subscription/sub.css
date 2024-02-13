@@ -4,6 +4,14 @@
     background-color: var(--color-white);
     padding-bottom: 3rem;
     margin: 2rem 1.5rem;
+    animation: slide-up .5s ease;
+}
+@keyframes slide-up {
+    0%{
+        transform: translatey(100%);
+    }100%{
+        transform: translateY(0);
+    }
 }
 
 .price-box h4 span{
