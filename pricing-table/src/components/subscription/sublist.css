@@ -1,23 +1,12 @@
-header{
-    position: relative;
-    background-color: var(--background);
-    width: 100%;
+section.main{
+    background: #eee;
 }
-header::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    
-    bottom: 0;
-    background-color: var(--foreground);
-    height: 1px;
-    width: 1000px;
-    transform: translateX(-50%);
-}
+
+
 .toggle-btn{
     width: 45px;
     height: 23px;
-    background-color: #111;
+    background-color:#ccc;
     padding: 5px;
     border-radius: 50px;
     position: relative;
@@ -26,9 +15,6 @@ header::after{
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-}
-ul{
-    color: var(--foreground);
 }
 .toggle-btn .ball{
     width: 20px;
@@ -42,5 +28,20 @@ ul{
 }
 .moved{
     transform: translateX(21px);
-    background-color:var(--foreground) !important;
+}
+.toggled{
+    background:rgba(95,201,52,1);
+}
+
+.sub-plans{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+@media screen and (max-width:600px) {
+    .sub-plans{
+        flex-direction: column;
+    }
 }

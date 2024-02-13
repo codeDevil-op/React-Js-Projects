@@ -5,12 +5,17 @@
 }
 .main{
     height: 100vh;
+    width: 100%;
     background-color: aquamarine;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .main .content-container{
     background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 5px;
     width: 400px;
-    margin:200px auto;
     text-align: center;
 }

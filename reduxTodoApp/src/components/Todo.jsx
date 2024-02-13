@@ -7,7 +7,7 @@ function Todo({handleEditClick, editFormVisibility}) {
   const dispatch = useDispatch()
   return (   
     <div>
-    <button onClick={()=>dispatch(handleComplete())}>Completed</button>
+    
       {displayData.map((data)=>(
         <div key={data.id}>
         <div>

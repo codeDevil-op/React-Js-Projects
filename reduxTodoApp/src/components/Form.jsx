@@ -8,9 +8,11 @@ function Form() {
   const [addtodo,setAddTodo] = useState('')
   const [editvalue,setEditValue] = useState('')
   const [editFormVisibility,setEditFormVisibility] = useState(false);
+  const [focus,setFocus] = useState(false)
   const [edittodo,setEditTodo] = useState('')
   const handleEditClick = (todo) =>{
     setEditFormVisibility(true)
+    setFocus(true)
     setEditTodo(todo)
   }
   const dispatch = useDispatch()
@@ -36,7 +38,7 @@ function Form() {
       
     }
     dispatch(saveUpdate(editedListObj))
-    setEditValue('')
+    // setEditValue('')
     setEditFormVisibility(false)
   }
 
@@ -48,13 +50,13 @@ function Form() {
       {!editFormVisibility?(<form onSubmit={handleFormSubmit}>
       <label>Add Your Todo</label>
       <div>
-        <input type='text' value={addtodo} onChange={(e)=>setAddTodo(e.target.value)}/>
+        <input type='text' autoFocus value={addtodo} onChange={(e)=>setAddTodo(e.target.value)}/>
         <button type='submit'>Add Todo</button>
       </div>
     </form>):(<form onSubmit={handleEditSubmit}>
       <label>Update Your Todo</label>
       <div>
-        <input type='text' value={editvalue} onChange={(e)=>setEditValue(e.target.value)}/>
+        <input type='text' autoFocus={focus} value={editvalue} onChange={(e)=>setEditValue(e.target.value)}/>
         <button type='submit'>Update Todo</button>
       </div>
     </form>)}
