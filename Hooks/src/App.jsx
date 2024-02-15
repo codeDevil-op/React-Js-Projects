@@ -3,8 +3,9 @@ import { useState } from 'react'
 import { peopleBioData } from './components/useStateArray'
 import './App.css'
 import { UseStateObjects } from './components/UseStateObjects'
-import { Conditional } from './components/Conditional'
+// import { Conditional } from './components/Conditional'
 import { Task } from './components/Task'
+import UseReducersBascis from './components/useReducers/UseReducersBasics'
 
 
 function App() {
@@ -36,7 +37,8 @@ function App() {
       {/* <h2>useState Objects</h2>
         <UseStateObjects /> */}
         {/* <Conditional /> */}
-        <Task/>
+        {/* <Task/> */}
+        <UseReducersBascis/>
       </div>
     </section>
     </>
