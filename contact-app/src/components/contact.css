@@ -1,0 +1,38 @@
+
+.profile-content{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+.contacts-img{
+    height: 130px;
+    width: 150px;
+    border-radius: 20% 20%;
+}
+.content{
+    margin-left: 2rem;
+}
+.content .fl-name{
+    display: flex;
+}
+.paragraph a{
+    list-style: none;
+    font-size: 20px;
+}
+.paragraph p{
+    margin-top: 10px;
+    font-size: 19px;
+}
+.buttons{
+    margin-top: 15px;
+    margin-left: -10px;
+}
+.favourite{
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.favourite:hover{
+    font-size: 31px;
+}

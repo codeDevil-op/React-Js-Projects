@@ -1,0 +1,25 @@
+.main-content{
+    display: flex;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 200px;
+    padding: 10px;
+    margin-left: 20px;
+}
+.profile h2{
+    font-size: 23px;
+}
+.profile img{
+    border-radius: 50%;
+}
+.profile button{
+    padding: 10px 15px;
+    margin-top: 10px;
+
+}

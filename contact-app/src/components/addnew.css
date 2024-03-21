@@ -1,0 +1,69 @@
+
+.form{
+    /* display: flex; */
+    padding: 20px;
+    margin-top: 30px;
+}
+form label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.filter .active{
+    background: rgb(92, 92, 225);
+}
+.fname-lname{
+    display: flex;
+}
+.fname-lname .inputs{
+    margin-left: 30px;
+}
+.fname-lname input{
+    margin-left: 10px;
+}
+
+.links input{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 38px;
+    width: 79%;
+}
+.notes{
+    position: relative;
+}
+.notes label{
+    position: absolute;
+    top: 1.5rem;
+}
+.notes textarea{
+    margin-top: 1rem;
+    margin-left: 12rem;
+    width: 79%;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+}
+
+form .buttons{
+    margin-left: 10rem;
+}
+
+.buttons button,.cancel,.add{
+    padding: 10px;
+    margin-left: 2rem;
+    cursor: pointer;
+    outline: 1px solid black;
+    border: none;
+    border: 1px solid;
+    border-radius: 5px;
+    background: none;
+    font-size: 18px;
+}
+.buttons .add{
+    
+    color: rgb(63, 63, 155);
+}
+.buttons .cancel{
+   
+    color: rgb(0, 0, 0);
+}
