@@ -1,0 +1,139 @@
+
+.heading{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cart-items{
+ 
+   width: 60%;
+   margin: auto;
+   padding: 3rem;
+}
+.item-card{
+    border-bottom: 1px solid rgb(93, 100, 93);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.item-card .image img{
+    width: 120px;
+    height: 100px;
+    border: 1px solid grey;
+}
+.item-card .text{
+    margin-left: -3rem;
+}
+.item-card .buttons{
+    display: flex;
+    flex-direction: row;
+}
+.buttons button{
+    padding: 5px;
+    cursor: pointer;
+}
+.buttons input{
+    width: 50px;
+    padding: 3px;
+    margin: 0 0.7rem;
+}
+.cart-items .subTotal p{
+    margin-right: 2rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+
+
+
+/* Media Queries for responsiveness */
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 992px) {
+    /* Targets tablets and smaller devices */
+    .cart-items {
+        width: 80%;
+        padding: 2rem;
+    }
+    .item-card .image img {
+        width: 100px;
+        height: 80px;
+    }
+}
+.clear-total{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    position: relative;
+}
+.clear-total button{
+    padding: 4px 10px;
+    height: 30px;
+}
+.clear-total div{
+    display: flex;
+   position: absolute;
+   right: 10rem;
+}
+.clear-total div p{
+    font-size: 2.1rem;
+    margin-left: 1rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* Targets smaller tablets and mobile devices */
+    .cart-items {
+        width: 90%;
+        padding: 1rem;
+    }
+    .item-card .image img {
+        width: 80px;
+        height: 60px;
+    }
+    .item-card .text {
+        margin-left: -2rem;
+    }
+    .buttons input {
+        width: 40px;
+        margin: 0 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    /* Targets smaller devices */
+    .cart-items {
+        width: 95%;
+        padding: 0.5rem;
+    }
+    .item-card .image img {
+        width: 60px;
+        height: 50px;
+    }
+    .item-card .text {
+        margin-left: -1.5rem;
+    }
+    .buttons input {
+        width: 30px;
+        margin: 0 0.2rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    /* Targets smaller devices */
+    .cart-items {
+        width: 85%;
+        padding: 0.5rem;
+    }
+    .item-card .image img {
+        width: 50px;
+        height: 40px;
+    }
+    .item-card .text {
+        margin-left: -1rem;
+    }
+    .buttons input {
+        width: 25px;
+        margin: 0 0.2rem;
+    }
+}
