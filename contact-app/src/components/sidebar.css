@@ -34,6 +34,7 @@
 }
 .contact-area{
     position: relative;
+    border: 2px solid red;
     padding: 5px;
     background: #f6f0f0;
     margin: 15px;
@@ -69,4 +70,29 @@
 .red{
     font-size: 3rem;
     background: green;
+}
+.add-new{
+    color: #fff;
+  background: #007bff;
+  border-radius: 5px;
+}
+@media screen and (max-width:925px) {
+    .top-content{
+       display: flex;
+       flex-direction: column;
+    }
+    .top-content .search-area{
+        
+        display: flex;
+        justify-content: center;
+    }
+    .top-content .add-new{
+        width: 100%;
+    }
+}
+@media screen and (max-width:720px){
+.search-area input{
+    width: 100%;
+    max-width:400px ;
+}
 }
